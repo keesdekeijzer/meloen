@@ -26,7 +26,7 @@
 <li><a href='git'>git</a></li>
 </ul>
 </div> <!-- kopmenu -->	
-    <div class="wrapper">
+    <div class="container">
       <header>
         <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
 
@@ -60,7 +60,8 @@
         <p>&nbsp;</p>
         {% endif %}
       </header>
-      <section>
+      <div class="midden">
+      <article id="Artikel" class="tabcontent">
         
         <h1>Artikelen</h1>
         
@@ -78,7 +79,8 @@
         <p>&nbsp;</p>
         {% include archive.html %}
 
-      </section>
+      </article>
+      </div><!-- midden -->
       <footer>
         <p><a href="{{ "/" | absolute_url }}{{- site.rssfeed -}}" class="rssfeed"></a></p>
         {% if site.github.is_project_page %}
