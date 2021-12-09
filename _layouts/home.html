@@ -62,7 +62,7 @@
       </header>
       <div class="midden">
       <article id="Artikel" class="tabcontent">
-        
+        <div id="submenu"></div>
         <h1>Artikelen</h1>
         
       {% for post in paginator.posts %}
@@ -76,11 +76,14 @@
         
       {{ content }}
         
-        <p>&nbsp;</p>
-        {% include archive.html %}
+       
 
       </article>
-      </div><!-- midden -->
+        <nav id="nav"><!-- menu -->
+           <p>&nbsp;</p>
+        {% include archive.html %}
+        </nav>
+      
       <footer>
         <p><a href="{{ "/" | absolute_url }}{{- site.rssfeed -}}" class="rssfeed"></a></p>
         {% if site.github.is_project_page %}
@@ -88,6 +91,7 @@
         {% endif %}
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
+        </div><!-- midden -->
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
   </body>
