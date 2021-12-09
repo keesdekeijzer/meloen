@@ -1,52 +1,7 @@
 @import "fonts";
 @import "rouge-github";
 
-.tagcloud {
- text-align: center;
- padding: 10px;
-}
 
-.pagination ul {
-display: inline;  
-}
-.pagination li {
-  border: solid 1px #cccccc;
-  color: #dddddd;
-  padding: 5px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-}
-
-.knop {
-  background-color: #fafbfc;
-  border: 1px solid #c6cbd1;
-  border-bottom-color: #959da5;
-  border-radius: 3px;
-  box-shadow: inset 0 -1px 0 #959da5;
-  color: #444d56;
-  display: inline-block;
-  font-size: 12px;
-  line-height: 12px;
-  padding: 3px 5px;
-  vertical-align: middle;
-}
-
-.feed-icon {
-  display: inline-block;
-}
-
-a.extern:after {
-  content: url(../../assets/img/externe-link16.png);
-  margin: 0 0 0 5px;
-}
-
-
-a.rssfeed:after {
-  content: url(../../assets/img/rssfeed.png);
-  margin: 0 0 0 5px;
-}
 
 /* 00000000000000000000000000000000000000000000 */
 
@@ -1302,5 +1257,50 @@ color: var(--kleur_kopmenu);
 }
 */
 
+.tagcloud {
+ text-align: center;
+ padding: 10px;
+}
 
+.pagination ul {
+display: inline;  
+}
+.pagination li {
+  border: solid 1px #cccccc;
+  color: #dddddd;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.knop {
+  background-color: #fafbfc;
+  border: 1px solid #c6cbd1;
+  border-bottom-color: #959da5;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #959da5;
+  color: #444d56;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 12px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.feed-icon {
+  display: inline-block;
+}
+
+a.extern:after {
+  content: url(../../assets/img/externe-link16.png);
+  margin: 0 0 0 5px;
+}
+
+
+a.rssfeed:after {
+  content: url(../../assets/img/rssfeed.png);
+  margin: 0 0 0 5px;
+}
 
