@@ -15,8 +15,8 @@
     <![endif]-->
     {% include head-custom.html %}
   </head>
-  <body>
-    <div class="kopmenu" id="kopmenu2">
+<body>
+<div class="kopmenu" id="kopmenu2">
 <ul class="nieuws-menu">
 <li><a href='index'>home</a></li>
 <li><a href='links'>links</a></li>
@@ -26,39 +26,29 @@
 <li><a href='extra'>extra</a></li>
 </ul>
 </div> <!-- kopmenu -->	
-    <div class="container">
-      <header>
-        {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="Logo" />
-        {% endif %}
-
-        
-      </header>
-      <div class="midden">
-      <article id="Artikel">
-        <div id="submenu"></div>
-        <h1>Artikelen</h1>
-        
-        
-      {{ content }}
-        
-        <p>dit staat er onder</p>
-
-      </article>
-        <nav id="nav"><!-- menu -->
-           <p>&nbsp;</p>
-        {% include archive.html %}
-        </nav>
-      
-      <footer>
-        <p><a href="{{ "/" | absolute_url }}{{- site.rssfeed -}}" class="rssfeed"></a></p>
-        {% if site.github.is_project_page %}
-        <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-        </div><!-- midden -->
-    </div><!-- container -->
-    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
-  </body>
+<div class="container">
+<header>
+{% if site.logo %}<img src="{{site.logo | relative_url}}" alt="Logo" />{% endif %}
+</header>
+<div class="midden">
+<article id="Artikel">
+<div id="submenu"></div>
+<h1>Artikelen</h1>
+{{ content }}
+<p>dit staat er onder</p>
+</article>
+<nav id="nav"><!-- menu -->
+{% include archive.html %}
+</nav>
+<footer>
+<p><a href="{{ "/" | absolute_url }}{{- site.rssfeed -}}" class="rssfeed"></a></p>
+{% if site.github.is_project_page %}
+<p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+{% endif %}
+<p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+</footer>
+</div><!-- midden -->
+</div><!-- container -->
+<script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+</body>
 </html>
