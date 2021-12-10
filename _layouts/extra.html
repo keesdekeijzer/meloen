@@ -23,7 +23,7 @@
 <li><a href='markdown'>markdown</a></li>
 <li><a href='voorbeeld'>voorbeeld</a></li>
 <li><a href='nieuw'>nieuw</a></li>
-<li><a href='git'>git</a></li>
+<li><a href='extra'>extra</a></li>
 </ul>
 </div> <!-- kopmenu -->	
     <div class="container">
@@ -35,18 +35,10 @@
         
       </header>
       <div class="midden">
-      <article id="Artikel" class="tabcontent">
+      <article id="Artikel">
         <div id="submenu"></div>
         <h1>Artikelen</h1>
         
-      {% for post in paginator.posts %}
-         <p>
-        <a href="{{- post.url | relative_url -}}">{{post.title}}</a><br>
-           {{post.description}}
-        </p>
-      {% endfor %}
-
-{% include paginator.html %}
         
       {{ content }}
         
