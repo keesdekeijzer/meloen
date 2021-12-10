@@ -1274,6 +1274,10 @@ display: inline;
   text-decoration: none;
   display: inline-block;
   margin-bottom: 1rem;
+  width: max-content;
+  inline-size: max-content;
+  height: max-content;
+  block-size: max-content;
 }
 /*
 .knop {
