@@ -5,10 +5,12 @@
     {{ tag[1].size | plus: 1000 }}#{{ tag[0] }}#{{ tag[1].size }}
   {% endfor %}
 {% endcapture %}
+  <ul>
 {% assign sortedtemptags = temptags | split:' ' | sort | reverse %}
 {% for temptag in sortedtemptags %}
   {% assign tagitems = temptag | split: '#' %}
   {% capture tagname %}{{ tagitems[1] }}{% endcapture %}
-  <a href="tag/{{ tagname }}" class="knop">{{ tagname }}</a>
+  <li><a href="tag/{{ tagname }}" class="knop">{{ tagname }}</a></li>
 {% endfor %}
+  </ul>
 </div>
