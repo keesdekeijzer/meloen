@@ -1260,7 +1260,7 @@ color: var(--kleur_kopmenu);
 /*
 .tagcloud {
  text-align: center;
- padding: 10px;
+ /*padding: 10px;*/
 }
 */
 .pagination ul {
@@ -1270,11 +1270,11 @@ display: inline;
 .pagination li {
   /*border: solid 1px #cccccc;
   color: #dddddd;
-  padding: 5px 20px;
+  padding: 5px 20px;*/
   text-align: center;
-  text-decoration: none;*/
+  text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  /*font-size: 16px;*/
 }
 /*
 .knop {
