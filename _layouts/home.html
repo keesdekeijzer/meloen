@@ -16,57 +16,34 @@
     {% include head-custom.html %}
   </head>
   <body>
-    <div class="kopmenu" id="kopmenu2">
-<ul class="nieuws-menu">
-<li><a href='index'>home</a></li>
-<li><a href='links'>links</a></li>
-<li><a href='markdown'>markdown</a></li>
-<li><a href='voorbeeld'>voorbeeld</a></li>
-<li><a href='nieuw'>nieuw</a></li>
-<li><a href='extra'>extra</a></li>
-</ul>
-</div> <!-- kopmenu -->	
-    <div class="container">
-      <header>
-        {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="Logo" />
-        {% endif %}
-
-        
-      </header>
-      <div class="midden">
-      <article id="Artikel" class="tabcontent">
-        <div id="submenu"></div>
-        <h1>Artikelen</h1>
-        
-      {% for post in paginator.posts %}
-         <p>
-        <a href="{{- post.url | relative_url -}}">{{post.title}}</a><br>
-           {{post.description}}
-        </p>
-      {% endfor %}
-
+{% include kopmenu.html %}
+<div class="container">
+<header>
+{% if site.logo %}<img src="{{site.logo | relative_url}}" alt="Logo" />{% endif %}
+</header>
+<div class="midden">
+<article id="Artikel" class="tabcontent">
+<div id="submenu"></div>
+<h1>Artikelen</h1>
+{% for post in paginator.posts %}
+<p><a href="{{- post.url | relative_url -}}">{{post.title}}</a><br>{{post.description}}</p>
+{% endfor %}
 {% include paginator.html %}
-        
-      {{ content }}
-        
-        <p>dit staat er onder</p>
-
-      </article>
-        <nav id="nav"><!-- menu -->
-           <p>&nbsp;</p>
-        {% include archive.html %}
-        </nav>
-      
-      <footer>
-        <p><a href="{{ "/" | absolute_url }}{{- site.rssfeed -}}" class="rssfeed"></a></p>
-        {% if site.github.is_project_page %}
-        <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-        </div><!-- midden -->
-    </div><!-- container -->
-    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
-  </body>
+{{ content }}
+<p>dit staat er onder</p>
+</article>
+<nav id="nav"><!-- menu -->
+<p>&nbsp;</p>
+{% include archive.html %}
+</nav>
+<footer>
+<p><a href="{{ "/" | absolute_url }}{{- site.rssfeed -}}" class="rssfeed"></a></p>
+{% if site.github.is_project_page %}
+<p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+{% endif %}
+<p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+</footer>
+</div><!-- midden -->
+</div><!-- container -->
+</body>
 </html>
