@@ -8,9 +8,7 @@
 <li class="pagination-previous disabled">Vorige</li>
 {% endif %}
 {% for counter in (1..paginator.total_pages) %}
-{% comment %}
-Special case: page1 will be the index page, so the link has to be generated manually
-{% endcomment %}
+{% comment %}Special case: page1 will be the index page, so the link has to be generated manually{% endcomment %}
 {% if counter == 1%}
 {% if counter == paginator.page %}
 <li class="current">{{ counter }}</li>
