@@ -1,17 +1,13 @@
 ---
 layout: defaultpost
 ---
-
-<small>{{ page.date | date: "%-d %B %Y" }}</small>
+{{ page.date | date: "%-d %B %Y" }}
 <h1>{{ page.title }}</h1>
-
 <p class="view">door {{ page.author | default: site.author }}</p>
-
 {{content}}
-
-<span>[
-  {% for tag in page.tags %}
-    {% capture tag_name %}{{ tag }}{% endcapture %}
-    <a href="../../../tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
-  {% endfor %}
-]</span>
+<p>[
+{% for tag in page.tags %}
+{% capture tag_name %}{{ tag }}{% endcapture %}
+<a href="../../../tag/{{ tag_name }}"><kbd><nobr>{{ tag_name }}</nobr></kbd>&nbsp;</a>
+{% endfor %}
+]</p>
