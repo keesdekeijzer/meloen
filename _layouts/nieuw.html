@@ -23,7 +23,7 @@
 <li><a href='markdown'>markdown</a></li>
 <li><a href='voorbeeld'>voorbeeld</a></li>
 <li><a href='nieuw'>nieuw</a></li>
-<li><a href='git'>git</a></li>
+<li><a href='extra'>extra</a></li>
 </ul>
 </div> <!-- kopmenu -->	
     <div class="container">
@@ -31,25 +31,17 @@
         {% if site.logo %}
           <img src="{{site.logo | relative_url}}" alt="Logo" />
         {% endif %}
-
-        
       </header>
       <div class="midden">
       <article id="Artikel" class="tabcontent">
         <div id="submenu"></div>
         <h1>Artikelen</h1>
-
-        
       {{ content }}
-        
-        <p>dit staat er onder</p>
-
-      </article>
+        </article>
         <nav id="nav"><!-- menu -->
            <p>&nbsp;</p>
         {% include archive.html %}
         </nav>
-      
       <footer>
         <p><a href="{{ "/" | absolute_url }}{{- site.rssfeed -}}" class="rssfeed"></a></p>
         {% if site.github.is_project_page %}
