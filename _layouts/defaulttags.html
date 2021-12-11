@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+    <title>{{ site.title | default: site.github.repository_name }}</title>
+{% seo %}
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    {% include head-custom.html %}
+</head>
+<body>
+{% include kopmenu-tags.html %}
+<div class="container">
+<header>
+{% if site.logo %}<a href="/{{ site.repo }}/index"><img src="{{site.logo | relative_url}}" alt="Logo" /></a>{% endif %}
+</header>
+<div class="midden">
+<article id="Artikel">
+<div id="submenu"></div>
+{{ content }}
+</article>
+<nav id="nav"><!-- menu -->
+{% include archive.html %}
+</nav>
+<footer>
+<p><a href="{{ "/" | absolute_url }}{{- site.rssfeed -}}" class="rssfeed"></a></p>
+{% if site.github.is_project_page %}
+<p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+{% endif %}
+<p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+</footer>
+</div><!-- midden -->
+</div><!-- container -->
+<script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+</body>
+</html>
