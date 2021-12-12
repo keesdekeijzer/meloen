@@ -22,4 +22,8 @@ layout: default
 {% for rubriek in site.data.gegevens.rubrieken %}
 <p>Rubriek: {{ rubriek.naam }}
 Kolom: {{ rubriek.kolom }}</p>
+{% for link in rubriek.links %}
+<p>Link: {{link.naam}}
+URL: {{link.url}}</p>
+{% endfor %}
 {% endfor %}
