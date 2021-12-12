@@ -1,25 +1,11 @@
 ---
 layout: default
 ---
-<p><a href="https://duckduckgo.com" class="extern">Duck Duck Go</a><br>
-  - Zoekmachine</p>
-                                              
-<p><a href="https://google.com" class="extern">Google</a><br>
-  - Zoekmachine</p>
-
-<p><a href="https://www.web2.nl/index.php?p=linux&a=vim_gebruiken_om_tekstbestanden_te_bewerken" class="extern">Vim gebruiken om tekstbestanden te bewerken</a><br>
-  - Vim is een teksteditor</p>
-
-<p><a href="https:github.com" class="extern">Github</a><br>
-  - Github</p>
-
-<p><a href="https://nu.nl/" class="extern">Nu.nl</a><br>
-  - Nu met het nieuws</p>
-
-<h2>Links via data</h2>
+<h2>Links</h2>
 {% for rubriek in site.data.gegevens.rubrieken %}
-<h3>{{ rubriek.naam }} ({{ rubriek.kolom }})</h3>
+<h3>{{ rubriek.naam }} ({{ rubriek.kolom }})</h3><ul>
 {% for link in rubriek.links %}
-<p><a href="{{link.url}}" class="extern" title="{{link.naam}}">{{link.naam}}</a></p>
+<li><a href="{{link.url}}" class="extern" title="{{link.naam}}">{{link.naam}}</a></li>
 {% endfor %}
+</ul>
 {% endfor %}
