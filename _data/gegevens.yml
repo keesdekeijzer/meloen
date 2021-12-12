@@ -10,7 +10,7 @@ rubrieken:
     kolom: 2
     links:
       - naam: Github
-        url: https:github.com
+        url: https://github.com
   - naam: Nieuws
     kolom: 3
     links:
