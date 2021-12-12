@@ -1,8 +1,6 @@
 ---
 layout: default
 ---
-<h1>Links</h1>
-
 <p><a href="https://duckduckgo.com" class="extern">Duck Duck Go</a><br>
   - Zoekmachine</p>
                                               
@@ -20,10 +18,8 @@ layout: default
 
 <h2>Links via data</h2>
 {% for rubriek in site.data.gegevens.rubrieken %}
-<p>Rubriek: {{ rubriek.naam }}
-Kolom: {{ rubriek.kolom }}</p>
+<h3>{{ rubriek.naam }} ({{ rubriek.kolom }})</h3>
 {% for link in rubriek.links %}
-<p>Link: {{link.naam}}
-URL: {{link.url}}</p>
+<p><a href="{{link.url}}" class="extern" title="{{link.naam}}">{{link.naam}}</a></p>
 {% endfor %}
 {% endfor %}
