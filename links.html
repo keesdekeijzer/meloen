@@ -17,3 +17,9 @@ layout: default
 
 <p><a href="https://nu.nl/" class="extern">Nu.nl</a><br>
   - Nu met het nieuws</p>
+
+<h2>Links via data</h2>
+{% for rubriek in site.data.gegevens.rubrieken %}
+<p>Rubriek: {{ rubriek.naam }}
+Kolom: {{ rubriek.kolom }}</p>
+{% endfor %}
