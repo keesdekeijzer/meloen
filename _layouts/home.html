@@ -34,13 +34,7 @@
 <nav id="nav"><!-- menu -->
 {% include archive.html %}
 </nav>
-<footer>
-<p><a href="{{ "/" | absolute_url }}{{- site.rssfeed -}}" class="rssfeed"></a></p>
-{% if site.github.is_project_page %}
-<p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-{% endif %}
-<p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
-</footer>
+{% include footer.html %}
 </div><!-- midden -->
 </div><!-- container -->
 </body>
