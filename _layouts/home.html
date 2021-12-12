@@ -17,11 +17,9 @@
   </head>
   <body>
 {% include kopmenu.html %}
-<div class="container"><div class="midden"><article id="Artikel">
-<div id="submenu"></div>
-<h1>Artikelen</h1><p>
+<div class="container"><div class="midden"><article id="Artikel"><div id="submenu"></div><h1>Artikelen</h1><p>
 {% for post in paginator.posts %}
-<a href="{{- post.url | relative_url -}}">{{post.title}}</a><br>-{{post.description}}
+<a href="{{- post.url | relative_url -}}">{{post.title}}</a><br>- {{post.description}}
 {% endfor %}</p>
 {% include paginator.html %}
 {{ content }}
