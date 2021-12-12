@@ -17,14 +17,12 @@
   </head>
   <body>
 {% include kopmenu.html %}
-<div class="container">
-<div class="midden">
-<article id="Artikel">
+<div class="container"><div class="midden"><article id="Artikel">
 <div id="submenu"></div>
-<h1>Artikelen</h1>
+<h1>Artikelen</h1><p>
 {% for post in paginator.posts %}
-<p><a href="{{- post.url | relative_url -}}">{{post.title}}</a><br>{{post.description}}</p>
-{% endfor %}
+<a href="{{- post.url | relative_url -}}">{{post.title}}</a><br>{{post.description}}
+{% endfor %}</p>
 {% include paginator.html %}
 {{ content }}
 </article>
