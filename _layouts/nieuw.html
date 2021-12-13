@@ -15,8 +15,8 @@
     <![endif]-->
     {% include head-custom.html %}
   </head>
-  <body>
-    <div class="kopmenu" id="kopmenu2">
+<body>
+<div class="kopmenu" id="kopmenu2">
 <ul class="nieuws-menu">
 <li><a href='index'>home</a></li>
 <li><a href='links'>links</a></li>
@@ -26,26 +26,21 @@
 <li><a href='extra'>extra</a></li>
 </ul>
 </div> <!-- kopmenu -->	
-    <div class="container">
-      <header>
-        {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="Logo" />
-        {% endif %}
-      </header>
-      <div class="midden">
-      <article id="Artikel" class="tabcontent">
-        <div id="submenu"></div>
-        <h1>Artikelen</h1>
-      {{ content }}
-        </article>
-        <nav id="nav"><!-- menu -->
-           <p>&nbsp;</p>
-        {% include archive.html %}
-        </nav>
+<div class="container">
+<div class="midden">
+<article id="Artikel" class="tabcontent">
+<div id="submenu"></div>
+<h1>Nieuw</h1>
+{{ content }}
+</article>
+<nav id="nav"><!-- menu -->
+<p>&nbsp;</p>
+{% include archive.html %}
+</nav>
 {% include footer.html %}
-        </div><!-- midden -->
-    </div><!-- container -->
-    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
-    <script src="{{ "assets/js/tekstVervangen.js" | relative_url }}"></script>
-  </body>
+</div><!-- midden -->
+</div><!-- container -->
+<script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+<script src="{{ "assets/js/tekstVervangen.js" | relative_url }}"></script>
+</body>
 </html>
