@@ -1,7 +1,6 @@
 ---
 layout: nieuw
 ---
-<p>nieuw</p>
 <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
 <p>{{ site.description | default: site.github.project_tagline }}</p>
 <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
