@@ -17,13 +17,7 @@
 </head>
 <body>
 {% include kopmenu.html %}
-<div class="container">
-<header>
-{% if site.logo %}<a href="/{{ site.repo }}/index"><img src="{{site.logo | relative_url}}" alt="Logo" /></a>{% endif %}
-</header>
-<div class="midden">
-<article id="Artikel">
-<div id="submenu"></div>
+<div class="container"><div class="midden"><article id="Artikel"><div id="submenu"></div>
 {{ content }}
 </article>
 <nav id="nav"><!-- menu -->
