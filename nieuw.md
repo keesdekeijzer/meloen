@@ -1,4 +1,5 @@
 ---
+title: Nieuw
 layout: nieuw
 ---
 <h2>Pagina's</h2>
