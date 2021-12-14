@@ -8,7 +8,7 @@ layout: nieuw
 {% if pag.title %}
 <a href="{{ pag.url | relative_url }}" title="{{ pag.title }}">{{ pag.title }}</a>
 {% else %}
-<a href="{{ pag.url | relative_url }}" title="{{ pag.url }}">{{ pag.url }}</a>(pagina zonder titel)
+<a href="{{ pag.url | relative_url }}" title="{{ pag.url }}">{{ pag.url }}</a> -- (pagina zonder titel)
 {% endif %}
 {% endfor %}
 </p>
