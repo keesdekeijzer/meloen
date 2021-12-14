@@ -9,6 +9,7 @@ layout: nieuw
 {% else %}
 <a href="{{ pag.url | relative_url }}" title="{{ pag.url }}">{{ pag.url }}</a>(pagina zonder titel)
 {% endif %}
+{% endfor %}
 </p>
 <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
 <p>{{ site.description | default: site.github.project_tagline }}</p>
