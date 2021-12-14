@@ -4,7 +4,7 @@ layout: nieuw
 <h2>Pagina's</h2>
 <p>
 {% for pag in site.pages %}
-{{ pag.title }} - {{ pag.url }}
+<a href="{{ pag.url }}" title="{{ pag.title }}">{{ pag.title }}</a>
 {% endfor %}
 </p>
 <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
