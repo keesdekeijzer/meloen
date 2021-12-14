@@ -4,7 +4,10 @@ layout: nieuw
 <h2>Pagina's</h2>
 <p>
 {% for pag in site.pages %}
-<a href="{{ pag.url | relative_url }}" title="{{ pag.title }}">{{ pag.title }}</a>&nbsp;-&nbsp;
+{% if pag.title %}
+<a href="{{ pag.url | relative_url }}" title="{{ pag.title }}">{{ pag.title }}</a>
+{% else %}
+<a href="{{ pag.url | relative_url }}" title="{{ pag.url }}">{{ pag.url }}</a>(pagina zonder titel)
 {% endfor %}
 </p>
 <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
