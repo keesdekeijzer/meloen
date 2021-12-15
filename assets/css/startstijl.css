@@ -84,6 +84,13 @@ li a {
 	display:block;
 	text-decoration: none;
 }
+li a:after {
+    content: "";
+    display: inline-block;
+    background: url("assets/img/groen.gif") no-repeat top right;
+    width: 14px;
+    height: 12px;
+}
 li a:link {
 	border-left:10px solid #FFFFA3;
 	border-right:10px solid #FFFFA3;
