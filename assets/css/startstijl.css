@@ -12,7 +12,7 @@ text-align: center;
 }
 
 .kop-rechts {
-
+   font-family: 'Montserrat', sans-serif;
 }
 
 .onder-kop {
@@ -84,26 +84,7 @@ li a {
 	display:block;
 	text-decoration: none;
 }
-li a:after {
-    /*content: "";
-    display: inline-block;
-    background-image: url("assets/img/groen.gif");
-    width: 14px;
-    height: 12px;*/
-	
-    content: "O";
-    /*display: block;*/
-    /*width: 0; 
-    height: 0; */
-    background-color: #880011;
-    /*border-top: 12px solid transparent;
-    border-bottom: 12px solid transparent;
-    border-left: 4px solid #880011; */
-    /*border-right: 4px solid #880011;*/
-    /*position: absolute;*/
-    /*top: 16px;*/
-    /*left: -12px;*/
-}
+
 li a:link {
 	border-left:10px solid #FFFFA3;
 	border-right:10px solid #FFFFA3;
