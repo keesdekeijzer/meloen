@@ -85,7 +85,7 @@ li a {
 	text-decoration: none;
 }
 li a:after {
-    content: "";
+    content: "--";
     display: inline-block;
     background: url("assets/img/groen.gif") no-repeat top right;
     width: 14px;
