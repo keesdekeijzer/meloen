@@ -99,8 +99,8 @@ li a:after {
     border-bottom: 12px solid transparent;
     border-left: 12px solid #727272; 
     /*position: absolute;*/
-    top: 16px;
-    left: -12px;
+    /*top: 16px;*/
+    /*left: -12px;*/
 }
 li a:link {
 	border-left:10px solid #FFFFA3;
