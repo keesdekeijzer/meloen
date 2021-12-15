@@ -95,10 +95,10 @@ li a:after {
     /*display: block;*/
     width: 0; 
     height: 0; 
-    border-top: 8px solid transparent;
-    border-bottom: 8px solid transparent;
-    border-left: 8px solid #727272; 
-    /*border-right: 8px solid #727272;*/
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid #727272; 
+    /*border-right: 4px solid #880011;*/
     /*position: absolute;*/
     /*top: 16px;*/
     /*left: -12px;*/
