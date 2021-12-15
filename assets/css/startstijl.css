@@ -92,13 +92,13 @@ li a:after {
     height: 12px;*/
 	
     content: "";
-    display: block;
+    /*display: block;*/
     width: 0; 
     height: 0; 
     border-top: 8px solid transparent;
     border-bottom: 8px solid transparent;
     border-left: 8px solid #727272; 
-    border-right: 8px solid #727272;
+    /*border-right: 8px solid #727272;*/
     /*position: absolute;*/
     /*top: 16px;*/
     /*left: -12px;*/
