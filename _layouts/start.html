@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+    <title>{{ site.title | default: site.github.repository_name }}</title>
+{% seo %}
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    {% include head-custom.html %}
+</head>
+<body>
+{% include kopmenu.html %}
+  
+<div class="container">
+<div class="container"> <!-- extra container -->	
+	
+<div class="ten columns kop-links">
+{% include kop-links.html %} <!-- kop links -->
+</div>
+	
+<div class="ten columns kop-rechts">
+{% include kop-rechts.html %} <!-- kop-rechts -->
+</div>
+
+<div class="sixteen columns onder-kop">
+{% include onder-kop.html %} <!-- onder-kop -->
+</div>
+	
+</div><!-- extra container -->	
+
+<div 	class="three columns kolom1">
+{% include kolom1.html %} <!-- kolom1 -->
+</div>
+
+<div 	class="four columns kolom2">
+{% include kolom2.html %} <!-- kolom2 -->
+</div>
+
+<div 	class="four columns kolom3">
+{% include kolom3.html %} <!-- kolom3 -->
+</div>
+
+<div 	class="four columns kolom4">
+{% include kolom4.html %} <!-- kolom4 -->
+</div>
+	
+<div 	class="five columns kolom5">
+<?php include kolom5.html %} <!-- ook kolom4 -->
+</div>
+	
+<!-- footer -->
+<div class="sixteen columns footer">
+{% include footer.html %} <!-- footer -->
+</div>
+
+</div><!-- container -->  
+  
+<div class="container"><div class="midden"><article id="Artikel"><div id="submenu"></div>
+{{ content }}
+</article>
+  
+{% include footer.html %}
+</div><!-- midden -->
+</div><!-- container -->
+<script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+<script src="{{ "assets/js/tekstVervangen.js" | relative_url }}"></script>
+</body>
+</html>
