@@ -27,7 +27,7 @@
 <div class="container"> <!-- extra container -->	
 	
 <div class="ten columns kop-links">
-<h2>kop links</h2> <!-- kop links -->
+<h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1> <!-- kop links -->
 </div>
 	
 <div class="ten columns kop-rechts">
@@ -35,7 +35,7 @@
 </div>
 
 <div class="sixteen columns onder-kop">
-<p>onder kop</p> <!-- onder-kop -->
+<p>{{ site.description | default: site.github.project_tagline }}</p> <!-- onder-kop -->
 </div>
 	
 </div><!-- extra container -->	
