@@ -1,23 +1,19 @@
 rubrieken:
   - naam: Zoekmachines
-    kolom: 1
     links:
       - naam: Google
         url: https://google.com
       - naam: DuckDuckGo
         url: http://duckduckgo.com
   - naam: Version control
-    kolom: 2
     links:
       - naam: Github
         url: https://github.com
   - naam: Nieuws
-    kolom: 3
     links:
       - naam: Nu.nl
         url: https://nu.nl
   - naam: Vim
-    kolom: 4
     links:
       - naam: Vim gebruiken om tekstbestanden te bewerken
         url: https://www.web2.nl/index.php?p=linux&a=vim_gebruiken_om_tekstbestanden_te_bewerken
