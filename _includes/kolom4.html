@@ -2,3 +2,10 @@
 <ul>
 <li>eerste</li>
 </ul>
+{% for rubriek in site.data.gegevens4.rubrieken %}
+<h3>{{ rubriek.naam }}</h3><ul>
+{% for link in rubriek.links %}
+<li><a href="{{link.url}}" class="extern" title="{{link.naam}}">{{link.naam}}</a></li>
+{% endfor %}
+</ul>
+{% endfor %}
