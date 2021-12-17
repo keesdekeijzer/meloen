@@ -17,6 +17,9 @@
 </head>
 <body>
 {% include kopmenu-tags.html %}
+<header>
+{% if site.logo %}<a href="/{{ site.repo }}/index"><img src="{{site.logo | relative_url}}" alt="Logo" /></a>{% endif %}
+</header>
 <div class="container">
 <div class="midden">
 <article id="Artikel">
