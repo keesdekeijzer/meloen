@@ -1,7 +1,19 @@
 <div class="tagcloud">
 {% if site.logo %}<img src="{{site.logo | relative_url}}" alt="Logo" />{% endif %}
 <h2>~Tag cloud~</h2>
-
+{% capture temptags %}
+  {% for tag in site.tags %}
+    {{ tag[1].size | plus: 1000 }}#{{ tag[0] }}#{{ tag[1].size }}
+  {% endfor %}
+{% endcapture %}
+{% assign sortedtemptags = temptags | split:' ' | sort | reverse %}
+<p>
+{% for temptag in sortedtemptags %}
+  {% assign tagitems = temptag | split: '#' %}
+  {% capture tagname %}{{ tagitems[1] }}{% endcapture %}
+  <a href="{{ tagname }}" class="knop">{{ tagname }}</a>&nbsp;-&nbsp;
+{% endfor %}
+</p>
 <h3>~Downloads~</h3>
 <ul class="downloads">
 <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
